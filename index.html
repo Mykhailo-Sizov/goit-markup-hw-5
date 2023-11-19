@@ -455,12 +455,23 @@
             </li>
           </ul>
         </div>
+            <div class="footer-input-container">
+              <label class="fooer-label" for="subscribe-input">Subscribe</label>
+              <div class="footer-container-input">
+                <input class="footer-input" type="email" id="subscribe-input" name="user_mail" title="user_mail" required
+                  placeholder="E-mail">
+                <button class="footer-button" type="submit">Subscribe
+                  <svg class="footer-svg-btn" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Frame-3">
+                  </svg>
+                </button>
+              </div>
       </div>
     </footer>
     <!-- backdrop with modal -->
-    <div class="backdrop">
-      <div class="modal">
-        <button class="modal-close-btn">
+    <div class="backdrop is-open">
+      <div class="modal ">
+        <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -470,18 +481,18 @@
 
         <form class="modal-form">
           <div class="modal-field">
-            <label for="icon-person" class="modal-label">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
           <div class="modal-input-wrap">
             <input 
             type="text" 
             class="modal-input" 
-            id="icon-person" 
-            name="user_name"
+            id="user-name" 
+            name="user-name"
             pattern="[a-zA-Zа-яА-ЯїЇєЄ']+"
             title="Mykhailo"
             required
             />
-            <svg class="modal-icon" width="18" height="18">
+            <svg class="modal-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
@@ -521,25 +532,25 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-field-textarea">
             <label class="modal-label" for="user-comment" >Comment</label>
             <textarea 
             class="modal-coment"
-            name="user_comment" 
+            name="user-comment" 
             id="user-comment" 
-            placeholder="Enter text"
+            placeholder="Text input"
             ></textarea>
           </div>
           <div class="check-field">
             <input  
             class="input-check visually-hidden " 
             type="checkbox"
-            id="user_checkbox"
-            name="user_privacy"
+            id="user-privacy"
+            name="user-privacy"
             value="true"
             required 
             />
-            <label for="user_checkbox" class="input-check-text">
+            <label for="user-privacy" class="input-check-text">
               <span class="checkbox">
                 <svg class="icon-checkbox-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
